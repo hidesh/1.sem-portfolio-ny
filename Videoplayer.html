@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidesh - Video Player</title>
+    <link rel="icon" type="image/x-icon" href="Billeder_og_logo/favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html#home" class="#"><img src="Billeder_og_logo/Hidesh_logo_1.png"  alt="logo" class="navlogo"></a>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#omMig">Om mig</a>
+                <a href="projekt.html#projekter" class="active">Projekter</a>
+                <a href="index.html#kontakt">Kontakt</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+    </main>
+
+    <section>
+        <iframe class="videosize" src="https://www.youtube.com/embed/hpFJPBO9r3A" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h6>How to tinder🔥</h6>
+        <h2>Her er videoen vi har arbejdet på under forløbet "video" på Multimediedesigner uddannelsen. <br>
+            Min rolle under processen var at være en bartender, som skulle vejlede denne unge mand,
+             da han nemlig havde et besvær på at få matches. Det var nok et af de fedeste og sjoveste oplevelser jeg haft, og fik skabt nogle fede minder!</h2>
+            <p></p>
+            <h2>Derudover var jeg også med under redigeringsprocessen, 
+            her valgte vi at arbejde med Adobe premiere Pro som jeg selv havde erfaring i,
+            da jeg tidligere har været med til at redigere YouTube videoer for nogle tidligere kammerater.</h2>
+    </section>
+
+<!-- JS til navbar-->
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+
+</html>

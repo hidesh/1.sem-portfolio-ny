@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidesh's portfolie</title>
+    <link rel="icon" type="image/x-icon" href="Billeder_og_logo/favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <!--Navigation bar, som jeg har fået inspiration fra W3School - "Responsive Top Navigation", og gjort det til mit eget -->
+        <!--link: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="#"><img src="Billeder_og_logo/Hidesh_logo_1.png" alt="logo" class="navlogo"></a>
+                <a href="#home" class="active">Home</a>
+                <a href="#omMig">Om mig</a>
+                <a href="projekt.html">Projekter</a>
+                <a href="#kontakt">Kontakt</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+    </main>
+        <!--Hjem - Her ser man mit billede, og hvad jeg laver-->
+        <section id="home">
+            <div class="topcards">
+                    <img src="Billeder_og_logo/hidesh.jpg" class="headimage" alt="Billede af Hidesh">
+                    <div class="container">
+                        <h1>Hejsa!</h1>
+                            <div class="center">
+                                <h2> Hidesh Kumar</h2>
+                                    <p></p>
+                                    <h2>Multimediedesigner
+                                    <br>Musik-producer
+                                    <br>Frontend udvikler
+                                </h2>
+                            </div>  
+                    </div> 
+            </div>    
+        </section>
+
+        <!--Om mig sektion - Forklare hvem jeg er som person med mine erfaringer: benyttet mig af grid funktionen, og center class -->
+
+        <section id="omMig">
+            <div class="center">
+                <div class="textbox">
+                        <h3>Om mig</h3>
+                            <h5>Velkommen til min side, mit navn er Hidesh Kumar.</h5> 
+                                <p></p>
+                                <h4>Til dagligt er jeg på mit første semester og studerer som multimediedesigner på Zealand Campus Køge.
+                                Jeg er ung mand på 21, der altid har haft en stor interesse for alt it og elektronik.</h4>
+                                <p></p> 
+                                <h4>I min fritid har jeg har en hobby/deltidsinteresse som musik-producer, som jeg har arbejdet med i mere end 3 år. I den tid har jeg lært at arbejde med
+                                    programmer som Fl Studio og Logic Pro, og kan kalde mig erfaren Music-engineer og composer.
+                                </h4>
+                                <p></p> 
+                                <h4>I mit liv har jeg stiftet erfaring med programmer og kodesprog som Adobe premiere pro, Adobe XD, Photoshop, HTML, CSS og meget mere. Derudover har jeg også gået på NEXT Sukkertoppen og studieretningen "Computer Science".
+                                    Her fik jeg også muligheden for at lærer mange andre ting at kende, igennem fagene informatik og programmering</h4>
+                                <p></p> 
+                                <h4>Jeg er en meget energisk og frisk person som altid vil udfordrer sig selv, så kontakt mig ved trykke på knappen, så lover jeg at du får den bedste service og produkt!</h4>
+                </div>  
+            </div> 
+            <!--Kontakt mig button som dirigere til kontakt mig #id-->
+            <a href="#kontakt" class="button1">Kontakt mig</a>
+        </section>
+
+        <!--Projekter-->
+        <section>
+            <div class="center">
+                <div class="textbox">
+                    <h3 id="projekter">Projekter</h3>
+                    <h5>Se mine tidligere projekter jeg har arbejdet på, blandt andet mit musik, kodening og en video!</h5>
+                </div>
+            </div>
+            
+        <!--Kode projekter-->
+        <div class="cards">
+            <div class="container">
+                <img src="Billeder_og_logo/Iconfeather-code.png" alt="CodeLogo" class="logo">
+                <div class="containerbox">
+                    <h6>Seneste</h6>
+                    <img src="Billeder_og_logo/HobbiHub.png" alt="Hobbihub" class="imageBox">
+                        <h5>Se mine hjemmeside projekter som jeg har været med til at udvikle på! Tryk på "Se mere" for mere information.</h5>
+                    <a href="projekt.html" class="button2">Se mere</a>
+                </div>
+            </div>
+
+        <!--Musik projekter-->
+    
+            <div class="container">
+                <img src="Billeder_og_logo/Iconawesome-music.png" alt="MusikLogo" class="logo">
+                <div class="containerbox">
+                    <h6>Seneste</h6>
+                    <img src="Billeder_og_logo/image1_2.png" alt="Hobbihub" class="screenshot">
+                        <h5>Se mine musikprojekter som jeg har produceret eller synget på! Tryk på "Se mere" for mere information.</h5>
+                    <a href="projekt.html" class="button2">Se mere</a>
+                    </div>
+            </div>
+       
+        <!--Video projekter-->
+  
+            <div class="container">
+                <img src="Billeder_og_logo/Iconawesome-video.png" alt="VideoLogo" class="logo">
+                <div class="containerbox">
+                    <h6>Seneste</h6>
+                    <img src="Billeder_og_logo/HTT.png" alt="Hobbihub" class="imageBox">
+                        <h5>Se videoprojekter hvor jeg enten er medvirkende og været med til at redigere! Tryk på "Se mere" for mere information.</h5>
+                    <a href="projekt.html" class="button2">Se mere</a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!--Kontakt formular - https://www.w3schools.com/html/html_forms.asp - Hjælp fra W3Schools, med en meget fin formulerende forklaring -->
+        <section>
+
+            <div class="center">
+                <div class="textbox">
+                    <h3 id="kontakt" >Kontakt</h3>
+                    <h5 >Hvis du gerne vil kontakte mig kan du enten udfylde formularen eller skrive til mig over de nævnte medier.</h5>
+                </div>
+            </div>
+
+            <div  class="container">
+                <!--Normalt ville der havde været sat en PHP-fil, men da vi ikke har arbejdet med det i nu holder jeg den tom-->
+                <form action="#">
+                    <label for="navn">Navn</label>
+                    <input type="text" id="navn" name="navn" placeholder="Dit navn...">
+
+                    <label for="mail">Mail</label>
+                    <input type="text" id="mail" name="mail" placeholder="Din mail...">
+
+                    <label for="message">Din besked</label>
+                    <textarea id="message" name="message" placeholder="Skriv en besked..." style="height:100px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+    <!--Footer med href links til forskellige sociale medier-->   
+    <footer class="footer">
+      <p class="text">hidesh@live.dk</p>
+        <br>
+      <div class="grid-containerfooter">
+        <a href="https://github.com/hidesh"><img src="Billeder_og_logo/github.png" alt="github" class="github"></a>
+        <a href="https://www.instagram.com/hidesh_kumar/"><img src="Billeder_og_logo/instagram.png" alt="instagram" class="instagram"></a>
+        <a href="https://www.linkedin.com/in/hidesh-k-a21056208"><img src="Billeder_og_logo/linkedin.png" alt="linkedIn" class="linkedIn"></a>
+        <a href="https://facebook.com"><img src="Billeder_og_logo/facebook.png" alt="facebook" class="facebook"></a>
+      </div>
+        <br>
+      <p class="text">©2021 Hidesh Kumar</p>
+      <div>
+          <!--En "Gå op" knap, som den her funktion til at gå til toppen af siden-->
+          <button onclick="topFunction()" id="myBtn" title="Gå til top"><img src="Billeder_og_logo/ScrollButton.png" alt="scrollButton"></button>
+      </div>
+      
+     
+    </footer>
+        
+
+    
+
+    
+    
+<!--Scripts-->  
+
+    <!-- JS til navbar-->
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        //benyttelse af if statement
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!-- JS til footer knap-->
+    <!--Jeg har valgt at bruge inspiration fra https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <script>
+        //Her har vi vores variable, som angiver knappen, også kaldet på engelsk "identifiers".
+        var mybutton = document.getElementById("myBtn");
+        
+        //Når brugeren har scrollede ned 20px pixels from toppen, visser den knappen
+        window.onscroll = function() {scrollFunction()};
+        
+        //benyttelse af if statement
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        
+        // Når brugeren klikker på knappen scroll den op til top.
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+</body>
+
+
+
+
+ 
+</html>

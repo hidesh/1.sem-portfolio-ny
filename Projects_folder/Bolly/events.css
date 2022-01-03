@@ -1,0 +1,212 @@
+:root{
+    --color-primary: #71322F;
+    --color-secondary: #CFA969;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --border-radius: 16px;
+}
+
+.body{
+    font-family: MADE-Sunflower, serif;
+    margin: 0;
+}
+
+.mainFlex{
+    background-color: var(--color-primary);
+    height: 1000px;
+}
+header a{
+    font-size: 22px;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+nav img{
+    width: 8%;
+}
+
+header ul{
+    padding: 0;
+    margin: 0;
+}
+
+header li{
+    display: inline;
+    background-color: var(--color-primary);
+    list-style: none;
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.header-nav{
+    height: 180px;
+    margin: 0;
+    text-align: center;
+    background-color: var(--color-secondary);
+}
+
+.He{
+    color: white;
+    text-align: center;
+    height: 0px;
+    font-size: 40px;
+}
+
+
+/*flex container*/
+.flex-container, .flex-col-top, .flex-col-middle, .flex-col-bottom, .brødtekst-hold, .head-hold, .head-online, .head-under{
+    display:flex;
+    justify-content: center;
+}
+
+.flex-container{
+    flex-direction: column;
+    height: 600px;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.flex-col-top, .flex-col-middle{
+    background-color: #CFA969;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-radius: 16px;
+}
+
+/*overskrift Events*/
+.head-events{
+    background-color: white;
+    font-size: 40px;
+    font-family: Vouge;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+    width: 100%
+}
+
+/*overskrift konkurrencer*/
+.head-competition{
+    background-color: white;
+    font-size: 40px;
+    font-family: Vouge;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+
+}
+
+/*overskrift Guest-performance*/
+.head-Guest{
+    background-color: white;
+    font-size: 40px;
+    font-family: Vouge;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+    
+
+}
+
+/*overskrift Film oplevelser*/
+.head-movie{
+    background-color: white;
+    font-size: 40px;
+    font-family: Vouge;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+}
+
+/*overskrift Ture*/
+.head-trip{
+    background-color: white;
+    font-size: 40px;
+    font-family: Vouge;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+}
+
+/*brødtekst Events*/
+.brødtekst-Events{
+    font-family: MADE Sunflower;
+    font-weight: normal;
+    font-style: normal;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+
+    
+    
+}
+/*brødtekst konkkurencer*/
+.brødtekst-compitition{
+    font-family: MADE Sunflower;
+    font-weight: normal;
+    font-style: normal;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*brødtekst Guest-performance*/
+.brødtekst-Guest{
+    font-family: MADE Sunflower;
+    font-weight: normal;
+    font-style: normal;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*brødtekst Film oplevelser*/
+.brødtekst-movie{
+    font-family: MADE Sunflower;
+    font-weight: normal;
+    font-style: normal;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*brødtekst Ture*/
+.brødtekst-trip{
+    font-family: MADE Sunflower;
+    font-weight: normal;
+    font-style: normal;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.fixedbutton{
+    position: fixed;
+    right: 0px; 
+    padding-top: 70px;
+    padding-right: 10px;
+  }
+  
+  .roundedFixedBtn{
+    height: 60px;
+    line-height: 55px;  
+    width: 60px;  
+    margin: auto;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #faca23;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+
+@media screen and (min-width: 415px){
+    body{
+        font-size: 10px;
+    }
+}

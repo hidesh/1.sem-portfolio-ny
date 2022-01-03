@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="icon_border">
+          <link rel="icon" href="images/logo.png" sizes="16x16" type="image/png">
+        </div>
+        
+        <link rel="stylesheet" href="faq.css">
+        <title>HobbiHub</title>
+    </head>
+    <body>
+
+      <a class="fixedbutton" href="../../projekt.html">
+        <div class="roundedFixedBtn">Tilbage<i class="fa fa-phone"></i></div>
+      </a>
+
+        <header>
+          <img src="images/logo.png" alt="">
+          <input type="text" placeholder="søg her.." class="search">
+          <img src="images/usericon.png" alt="userIcon" class="usericon">
+      
+          <nav class="dropdown">
+            <button onclick="myFunction()" class="dropbtn icon-border">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">Forside</a>
+              <a href="minprofil.html" class="dropdown-line">Min profil</a>
+              <a href="udforsk.html" class="dropdown-line">Udforsk</a>
+              <a href="konstruktion.html" class="dropdown-line">Udforsk hjælpere</a>
+              <a href="konstruktion.html" class="dropdown-line">Opret opslag</a>
+              <a href="beskeder.html" class="dropdown-line">Beskeder</a>
+              <a href="faq.html" class="dropdown-line">FAQ</a>
+            </div>
+          </nav>
+        </header>
+      
+        <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+      
+      
+      
+      
+      
+      
+<!--Section containing this sites' title-->
+    <main style="text-align: center; margin-top: 50%;">
+      <h1>Ups.. siden er under konstruktion!</h1>
+    </main>
+          
+    <div class="forsiden">
+      <a href="index.html" class="til_forsiden">Til forsiden</a>
+    </div>
+
+      <footer>
+        <img src="images/trust-nem.png" alt="trustpilot-nemID">
+        <div class="footer-box">
+          <p class="footer-text">kontakt@hobbihub.dk</p>
+          <p class="footer-text">tlf:. 28572372</p>
+          <img src="images/facebook.png" alt="facebook" class="facebook">
+          <img src="images/instagram.png" alt="instagram" class="instagram">
+        </div>
+      </footer>
+
+   
+
+    </body>
+</html>

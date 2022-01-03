@@ -1,0 +1,258 @@
+.navbar{
+  background: #CFA969;
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+    padding: 0px;
+    width: 100%;
+  }
+
+.navbar ul{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navbar ul li{
+  list-style-type: none;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-top: -1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+  color: white;
+  font-family: MADE Sunflower;
+  font-size: 1em;
+  padding-left: 1%;
+}
+
+body{
+    background: #71322f;
+    margin: 0%;
+}
+
+
+
+.boxtainer{
+  background: #CFA969;
+  border: 3px solid black;
+  width: auto;
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+  
+  
+.containerbox{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 3px solid black;
+  width: 80%;
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+  
+h2{
+    font-family: vouge;
+    text-align: center;
+    font-size: 2em;
+}
+
+h3{
+    color: black;
+    font-family: MADE Sunflower;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+h4{
+  color: white;
+  font-family: bits indian calligra;
+  font-style: normal;
+  text-align: center;
+  font-size: 15vw;
+  padding-top: -100px;
+}
+
+h5{
+    color: white;
+    font-family: vouge;
+    text-align: center;
+    font-size: 2em;
+}
+
+.readmore_button{
+    background-color: #71322f; 
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* slideshow */
+.mySlides {display: none;}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 20%;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 1%;
+}
+
+.grid-container{
+    margin: 20px auto;
+    width:400px;
+    height:400px;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-row-gap: 20px;
+}
+
+.boxtext{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: MADE Sunflower;
+    color: white;
+}
+
+.icon{
+    align-self: center;
+    width: 50px;
+    margin: 0%;
+    height: 50px;
+}
+
+.icon_text{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    font-family: MADE Sunflower;
+}
+
+.fixedbutton{
+  position: fixed;
+  right: 0px; 
+  padding-top: 70px;
+  padding-right: 10px;
+}
+
+.roundedFixedBtn{
+  height: 60px;
+  line-height: 55px;  
+  width: 60px;  
+  margin: auto;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #faca23;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+.navbar{
+    background: #CFA969;
+    height: 75px;
+    margin:0 auto 0;
+  }
+
+.navbar ul{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+.logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-top: -1px;
+  }
+
+  .text {
+    color: white;
+    font-family: MADE Sunflower;
+    padding: 30px 100px;
+  }
+
+  h4{
+    font-size: 80px;
+  }
+
+  .boxtainer{
+    background: #CFA969;
+    border: 3px solid black;
+    width: auto;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+    
+    
+  .containerbox{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 3px solid black;
+    width: 80%;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .grid-container{
+    margin: 20px auto;
+    width:400px;
+    height:400px;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-row-gap: 20px;
+  }
+}

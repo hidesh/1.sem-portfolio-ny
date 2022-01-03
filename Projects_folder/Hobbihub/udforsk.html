@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon\favicon-16x16.png">
+    <link rel="manifest" href="icon\site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- link css-->
+    <link rel="stylesheet" href="udforsk.css">
+<title>HobbiHub</title>
+</head>
+<body>
+    <a class="fixedbutton" href="../../projekt.html">
+        <div class="roundedFixedBtn">Tilbage<i class="fa fa-phone"></i></div>
+      </a>
+    <header>
+        
+       <a href="#"> <img class="logoallign" src="pictures\Hobbihub_logo.png" alt="HobbiHub logo" width="100" height="50"></a>
+            <form id="form">
+                <input type="search" id="query" name="q" placeholder="Søg...">
+                <button class="button buttonSearch">
+                    <img src="pictures\search.png" alt="search" width="15" height="15">
+                </button>
+            </form>
+
+        <div id="accountbutton">
+           <a href="#"><img src="pictures\account.png" alt="accountprofile" class="accountbutton"></a> 
+        </div>
+        
+        <!--Navbar-->
+        <nav class="dropdown">
+            <button onclick="myFunction()" class="dropbtn icon-border"><img src="icon/menu.png" alt="menu" width="20" height="20"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">Forside</a>
+              <a href="minprofil.html" class="dropdown-line">Min profil</a>
+              <a href="udforsk.html" class="dropdown-line">Udforsk</a>
+              <a href="konstruktion.html" class="dropdown-line">Udforsk hjælpere</a>
+              <a href="konstruktion.html" class="dropdown-line">Opret opslag</a>
+              <a href="beskeder.html" class="dropdown-line">Beskeder</a>
+              <a href="faq.html" class="dropdown-line">FAQ</a>
+            </div>
+        </nav>
+
+    </header>
+
+        <h1>UDFORSK</h1>
+
+    <section>
+
+        <!--Box1-->
+        <div class="center">
+            <img class="center" src="pictures\stakit_1_342x254.png" alt="stakit">
+            <div class="textbox">
+                <h2>Pris: 250kr/t</h2>
+                    <button class="button buttonContact">Kontakt sælger</button>
+                    <img src="pictures\Path 110.png" class="savelogo">
+                <h3>GEM</h3>
+            </div>
+        </div>
+
+          <!--Box2-->
+          <div class="center">
+            <img class="center" src="pictures\ukrudt_342x254.png" alt="stakit" style="padding-top: 50px;">
+            <div class="textbox">
+                <h2>Pris: 200kr</h2>
+                    <button class="button buttonContact">Kontakt sælger</button>
+                    <img src="pictures\Path 110.png" class="savelogo">
+                <h3>GEM</h3>
+            </div>
+        </div>
+
+        <!--Box3-->
+        <div class="center">
+            <img class="center" src="pictures\hund_342x254.png" alt="stakit" style="padding-top: 50px;">
+            <div class="textbox" style="padding-bottom: 23%;">
+                <h2>Pris: 250kr</h2>
+                    <button class="button buttonContact">Kontakt sælger</button>
+                    <img src="pictures\Path 110.png" class="savelogo">
+                <h3>GEM</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="icon/trust-nem.png" alt="trustpilot-nemID">
+        <div class="footer-box">
+          <p class="footer-text">kontakt@hobbihub.dk</p>
+          <p class="footer-text">tlf:. 28572372</p>
+          <img src="icon/facebook.png" alt="facebook" class="facebook">
+          <img src="icon/instagram.png" alt="instagram" class="instagram">
+        </div>
+      </footer>
+
+<!--Navbar script-->
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+
+</body>
+</html>

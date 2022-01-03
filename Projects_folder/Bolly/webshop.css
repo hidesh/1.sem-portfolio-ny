@@ -1,0 +1,177 @@
+:root{
+    --color-primary: #71322F;
+    --color-secondary: #CFA969;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --border-radius: 16px;
+}
+
+body{
+    margin: 0;
+    background-color: var(--color-primary);
+}
+
+header a{
+    font-size: 22px;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+nav img{
+    width: 30%;
+}
+
+header ul{
+    padding: 0;
+    margin: 0;
+}
+
+header li{
+    display: inline;
+    background-color: var(--color-primary);
+    list-style: none;
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.header-nav{
+    height: 170px;
+    margin: 0;
+    text-align: center;
+    background-color: var(--color-secondary);
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color-white);
+    margin: 0;
+    margin-top: 20px;
+}
+
+main a{
+    font-size: 50px;
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+main ul{
+    margin: 20px;
+    padding: 0;
+}
+
+main li{
+    background-color: var(--color-white);
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: var(--border-radius);
+}
+
+.clickable-part{
+    padding: 10px;
+    text-align: center;
+}
+
+.fixedbutton{
+    position: fixed;
+    right: 0px; 
+    padding-top: 70px;
+    padding-right: 10px;
+  }
+  
+  .roundedFixedBtn{
+    height: 60px;
+    line-height: 55px;  
+    width: 60px;  
+    margin: auto;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #faca23;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+
+
+@media screen and (min-width: 415px) {
+    body{
+        margin: 0;
+        background-color: var(--color-primary);
+    }
+
+    header a{
+        font-size: 40px;
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+    nav img{
+        width: 12%;
+        float: left;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 70px;
+        margin: 0;
+    }
+
+    header li{
+        background-color: var(--color-primary);
+        list-style: none;
+        border-radius: var(--border-radius);
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .header-nav{
+        height: 220px;
+        margin: 0;
+        text-align: center;
+        background-color: var(--color-secondary);
+    }
+
+    h1{
+        font-size: 4rem;
+        text-align: center;
+        color: var(--color-white);
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    main a{
+        display: flex;
+        font-size: 50px;
+        color: var(--color-black);
+        text-decoration: none;
+    }
+    
+    main ul{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    main li{
+        background-color: var(--color-white);
+        list-style: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: var(--border-radius);
+        width: 400px;
+        height: 200px;
+        margin: 25px;
+        margin-top: 100px;
+    }
+    
+    .clickable-part{
+        width: 100%;
+        text-align: center;
+        padding-top: 71px;
+        padding-bottom: 71px;
+    }
+}

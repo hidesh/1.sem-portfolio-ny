@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HobbiHub</title>
+</head>
+<body>
+
+  <a class="fixedbutton" href="../../projekt.html">
+    <div class="roundedFixedBtn">Tilbage<i class="fa fa-phone"></i></div>
+  </a>
+
+  <header>
+      <img src="logo.png" alt="logo">
+      <input type="text" placeholder="Søgefelt" class="search">
+      <div class="icon-border">
+          <img src="user.png" alt="profil" class="user">
+      </div>
+      <nav class="dropdown">
+          <button onclick="myFunction()" class="dropbtn icon-border">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Forside</a>
+            <a href="minprofil.html" class="dropdown-line">Min profil</a>
+            <a href="udforsk.html" class="dropdown-line">Udforsk</a>
+            <a href="konstruktion.html" class="dropdown-line">Udforsk hjælpere</a>
+            <a href="konstruktion.html" class="dropdown-line">Opret opslag</a>
+            <a href="beskeder.html" class="dropdown-line">Beskeder</a>
+            <a href="faq.html" class="dropdown-line">FAQ</a>
+          </div>
+      </nav>
+  </header>
+  
+  <main>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="Slideshow1.png" class="slideshow-img">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="Slideshow2.png" class="slideshow-img">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="Slideshow3.png" class="slideshow-img">
+      </div>
+    </div>
+      <a href="" class="forside-knap">Udforsk</a>
+  </main>
+
+  <footer>
+    <img src="trust-nem.png" alt="trustpilot-nemID">
+    <div class="footer-box">
+      <p class="footer-text">kontakt@hobbihub.dk</p>
+      <p class="footer-text">tlf:. 28572372</p>
+      <img src="facebook.png" alt="facebook" class="facebook">
+      <img src="instagram.png" alt="instagram" class="instagram">
+    </div>
+  </footer>
+
+ 
+  
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <title>BDS - Forside</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/BDS_logo.png"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<main>
+    <header>
+        <nav class="navbar ul">
+            
+                <a href="undervisning.html" class="text">Undervisning</a>
+                <a href="events.html" class="text">Events</a>
+                <a href="index.html">
+                <img src="images/BDS_logo.png" alt="logo" class="logo">
+                </a>
+                <a href="webshop.html" class="text">Webshop</a>
+                <a href="Omos.html" class="text">Om os</a>
+            
+        </nav>
+    </header>
+
+</main>
+
+<a class="fixedbutton" href="../../projekt.html">
+    <div class="roundedFixedBtn">Tilbage<i class="fa fa-phone"></i></div>
+  </a>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/slideshow1.jpg" alt="første slideshow" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/slideshow2.jpg" alt="anden slideshow" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/slideshow3.jpg" alt="tredje slideshow" style="width:100%">
+
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/slideshow4.jpg" alt="fjerde slideshow" style="width:100%">
+
+    </div>
+
+</div>
+
+<h4>Bollywood Dance Studio</h4>
+
+    <section>
+        
+        <div class="boxtainer">
+            <div class="containerbox">
+                <h2> Kort om Bollywood</h2>
+                <h3>
+                    Bollywood er navnet på den del af den indiske filmindustri, der er hindi-sproget og har hjemsted i Mumbai.
+                </h3>
+                <h3>
+                    Navnet er en sammentrækning af Bombay (det tidligere navn for Mumbai) og Hollywood, og konnotationen er dermed: Indiens svar på Hollywood.
+                </h3>
+                <h3>
+                    Bollywood-film udgør således blot den hindisprogede del af den indiske filmindustri. 
+                </h3>
+                <div class="readmore_button">Læs mere</div>
+            </div>
+            <div class="containerbox">
+                <h2> Kort om Indien</h2>
+                <h3>
+                    I Indiens orange-grøn-hvid-stribede flag repræsenterer farverne de tre hovedgrupper i de indiske religiøse kulturer. 
+                </h3>
+                <h3>
+                    Den orange farve repræsenterer hinduismen, den grønne Islam og den hvide farve de mange mindretals-religioner.
+                </h3>
+                <div class="readmore_button">Læs mere</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h5>Sociale medier</h5>
+        
+        <div class="grid-container">
+            <div class="boxtext">
+                <img src="icon/twitter.png" alt="twitter_icon" class="icon">
+                <br> Twitter <br>
+                 <div class="icon_text">@ZeaDance</div> 
+            </div>
+            <div class="boxtext">
+                <img src="icon/facebook.png" alt="twitter_icon" class="icon">
+                <br> Facebook <br>
+                <div class="icon_text">@ZeaDance</div> 
+            </div>
+            <div class="boxtext">
+                <img src="icon/snapchat.png" alt="twitter_icon" class="icon">
+                <br> Snapchat <br>
+                <div class="icon_text">@ZeaDance</div> 
+            </div>
+            <div class="boxtext">
+                <img src="icon/instagram.png" alt="twitter_icon" class="icon">
+                <br> Instagram <br>
+                <div class="icon_text">@ZeaDance</div> 
+            </div>
+        </div>
+    
+    </section>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 7000); // Change image every 7 seconds
+        }
+    </script>
+
+</body>
+</html>

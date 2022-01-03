@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="icon_border">
+      <link rel="icon" href="images/logo.png" sizes="16x16" type="image/png">
+    </div>
+    <link rel="stylesheet" href="faq.css">
+    <title>HobbiHub</title>
+</head>
+
+
+
+
+
+<body>
+
+  <a class="fixedbutton" href="../../projekt.html">
+    <div class="roundedFixedBtn">Tilbage<i class="fa fa-phone"></i></div>
+  </a>
+  <header>
+    <img src="images/logo.png" alt="">
+    <input type="text" placeholder="søg her.." class="search">
+    <img src="images/usericon.png" alt="userIcon" class="usericon">
+
+  <nav class="dropdown">
+    <button onclick="myFunction()" class="dropbtn icon-border">Menu</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index.html">Forside</a>
+      <a href="minprofil.html" class="dropdown-line">Min profil</a>
+      <a href="udforsk.html" class="dropdown-line">Udforsk</a>
+      <a href="konstruktion.html" class="dropdown-line">Udforsk hjælpere</a>
+      <a href="konstruktion.html" class="dropdown-line">Opret opslag</a>
+      <a href="beskeder.html" class="dropdown-line">Beskeder</a>
+      <a href="faq.html" class="dropdown-line">FAQ</a>
+    </div>
+  </nav>
+  </header>
+
+
+  <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown-->
+  <!--script til dropdownmenu-->
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+
+
+
+
+
+    <!--Section containing this sites' title-->
+    <main class="title">
+      <h1>FAQ</h1>
+    </main>
+
+
+    <!--Section with faqs inspiration fra w3s accordation-->
+    <button class="accordion">Koster jeres service?</button>
+    <div class="panel">
+      <p>Det koster ikke noget at bruge vores platform.
+        Man kan dog betale sig til en højere placering 
+        på listen over annoncer.</p>
+    </div>
+    
+    <button class="accordion">Kan jeg være tryg ved brug af jeres platform?</button>
+    <div class="panel">
+      <p>Med NemID-validering, er det sikret, at alle brugere
+        er reelle personer.</p>
+    </div>
+    
+    <button class="accordion">Hvordan bliver jeg NemID valideret?</button>
+    <div class="panel">
+      <p>Ved en NemID-validering, skal du én gang validere din profil på HubbiHub ved hjælp af dit nøglekort, som mange kender fra netbank.
+
+        Du kan hurtig og nemt blive NemID-valideret på HubbiHub:
+        
+        - Find dit NemID-nøglekort frem
+        
+        - Gå ind på “Min Profil”
+        
+        - Vælg "Bliv NemID-valideret"
+        
+        - Tast dit NemID-bruger-id og adgangskode samt nøglen fra dit NemID-nøglekort
+        
+        - Du er nu NemID-valideret
+        
+        - Ovenstående kan kun gøres én gang, og du skal derfor ikke benytte NemID, når du besøger HubbiHub efterfølgende.
+        
+        Når din profil er NemID-valideret, vil du se et grønt flueben ud for ”NemID Validering” på din profil, ligesom det vil være synligt på dine annoncer.</p>
+    </div>
+
+
+    <!--script til faq spørgsmålene-->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+      </script>
+<!--Footer-->
+    <footer>
+      <img src="images/trust-nem.png" alt="trustpilot-nemID">
+      <div class="footer-box">
+        <p class="footer-text">kontakt@hobbihub.dk</p>
+        <p class="footer-text">tlf:. 28572372</p>
+        <img src="images/facebook.png" alt="facebook" class="facebook">
+        <img src="images/instagram.png" alt="instagram" class="instagram">
+      </div>
+    </footer>
+
+    <a class="fixedbutton" href="../../projekt.html">
+      <div class="roundedFixedBtn">Tilbage<i class="fa fa-phone"></i></div>
+    </a>
+
+</body>
+
+
+
+
+
+</html>
