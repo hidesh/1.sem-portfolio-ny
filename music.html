@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidesh - Musik</title>
+    <link rel="icon" type="image/x-icon" href="Billeder_og_logo/favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <!--Navigation bar, som jeg har fået inspiration fra W3School - "Responsive Top Navigation", og gjort det til mit eget -->
+        <!--link: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html#home" class="#"><img src="Billeder_og_logo/Hidesh_logo_1.png" alt="logo" class="navlogo"></a>
+                <a href="index.html#home" class="active">Home</a>
+                <a href="index.html#omMig">Om mig</a>
+                <a href="projekt.html#projekter">Projekter</a>
+                <a href="index.html#kontakt">Kontakt</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+    </main>
+
+    <h6>Musik og Produktion</h6>
+    <div class="center">
+        <h5> Jeg har altid været fascineret af musik. Hvordan oprindelsen og produktion fungere af forskellige genre, som virkelig fanger min øre.
+             Selvom min baggrund ikke har været at mestrer et eller flere instrumenter, har jeg altid haft et godt ørefang, og det har givet mig muligheden
+             i at nemt at kunne forstå hvordan en sang er produceret. Selve interresen for produktion kom frem i 2016, hvor jeg startet i mit år i 10.klasse,
+             her fik jeg nogle nye venner som virkelig gav mig et kendskab i forskellige genre musik. Det var nemlig her hvor jeg lærte at remixe sange som det første.
+        </h5>
+    </div>    
+
+    <h6>Collabs med Artister</h6>
+    
+
+    <!--Footer med href links til forskellige sociale medier-->   
+    <footer class="footer">
+      <p class="text">hidesh@live.dk</p>
+        <br>
+      <div class="grid-containerfooter">
+        <a href="https://github.com/hidesh"><img src="Billeder_og_logo/github.png" alt="github" class="github"></a>
+        <a href="https://www.instagram.com/hidesh_kumar/"><img src="Billeder_og_logo/instagram.png" alt="instagram" class="instagram"></a>
+        <a href="https://www.linkedin.com/in/hidesh-k-a21056208"><img src="Billeder_og_logo/linkedin.png" alt="linkedIn" class="linkedIn"></a>
+        <a href="https://facebook.com"><img src="Billeder_og_logo/facebook.png" alt="facebook" class="facebook"></a>
+      </div>
+        <br>
+      <p class="text">©2021 Hidesh Kumar</p>
+      <div>
+          <!--En "Gå op" knap, som den her funktion til at gå til toppen af siden-->
+          <button onclick="topFunction()" id="myBtn" title="Gå til top"><img src="Billeder_og_logo/ScrollButton.png" alt="scrollButton"></button>
+      </div>
+      
+     
+    </footer>
+        
+
+    
+
+    
+    
+<!--Scripts-->  
+
+    <!-- JS til navbar-->
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        //benyttelse af if statement
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!-- JS til footer knap-->
+    <!--Jeg har valgt at bruge inspiration fra https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <script>
+        //Her har vi vores variable, som angiver knappen, også kaldet på engelsk "identifiers".
+        var mybutton = document.getElementById("myBtn");
+        
+        //Når brugeren har scrollede ned 20px pixels from toppen, visser den knappen
+        window.onscroll = function() {scrollFunction()};
+        
+        //benyttelse af if statement
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        
+        // Når brugeren klikker på knappen scroll den op til top.
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+</body>
+
+
+
+
+ 
+</html>
