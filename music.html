@@ -23,6 +23,7 @@
                 <a href="index.html#home" class="active">Home</a>
                 <a href="index.html#omMig">Om mig</a>
                 <a href="projekt.html#projekter">Projekter</a>
+                <a href="music.html">Musik</a>
                 <a href="index.html#kontakt">Kontakt</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -35,7 +36,8 @@
     <div class="center">
         <h5> Jeg har altid været fascineret af musik. Hvordan oprindelsen og produktion fungere i de forskellige genre.
              Selvom min baggrund ikke har været at mestrer et eller flere instrumenter, har jeg altid haft et godt ørefang, og det har givet mig muligheden
-             i at nemt at kunne forstå hvordan en sang er produceret. Selve interresen for produktion kom frem i 2016, hvor jeg startet i mit år i 10.klasse,
+             i at nemt at kunne forstå hvordan en sang er produceret. 
+             <br>Selve interresen for produktion kom frem i 2016, hvor jeg startet i mit år i 10.klasse,
              her fik jeg nogle nye venner som virkelig gav mig et kendskab i forskellige musikgenre. Det var nemlig her hvor jeg lærte at remixe sange som det første og herefter producere.
         </h5>
     </div>    
@@ -47,16 +49,16 @@
         <h5>Her er der små demoer af mine beats, dog vil der fremadrettet komme mange flere med en bedre medieplayer. De her beats er dog kun produceret i mit hjemmestudie og ikke i mit studie med bedre udstyr. Så det kan være at kvaliteten ikke er super.</h5>
 
         <!-- Create a music element -->
-        <audio controls class="audio-container">
+        <audio controls class="musicPlayer">
         <source src="" type="audio/mp3"> <!--Make sure not to put anything in the scr-->
         </audio>
         
         <!-- Create a few buttons -->
         <div class="cardsproject">
-        <button class="buttonOne" onclick="func(0)">Song 1</button>
-        <button class="buttonOne" onclick="func(1)">Song 2</button>
-        <button class="buttonOne" onclick="func(2)">Song 3</button>
-        <button class="buttonOne" onclick="func(3)">Song 4</button>
+        <button class="buttonOne" onclick="func(0)">Beat 1</button>
+        <button class="buttonOne" onclick="func(1)">Beat 2</button>
+        <button class="buttonOne" onclick="func(2)">Beat 3</button>
+        <button class="buttonOne" onclick="func(3)">Beat 4</button>
         </div>
         <!-- I hope this was helpful! -->
     </section>
@@ -75,6 +77,8 @@
                 <p class="h7">En dag i 2019, sad jeg og lyttede til musik med shuffle. Jeg var ret inspiret den dag og tænkte at det var på tide at lærer noget nyt. 
                 Jeg valgte derfor at finde en genre, som jeg synes var spændenede men mere relaterebar. Jeg fandt så genren Punjabi/Hip Hop, og dykket mig dybere ned i den.
                 Her fandt jeg mange forskellige artister jeg kunne lide, men blev helt interreseret i artisten Ezu, med hans sang "hor labna" - Dansk oversat "find en anden".
+                
+                <p class="h7">
                 Jeg følte at genren passede perfekt med de nuværende kompentencer jeg havde og derfor valgte arbejde på et beat der mindede om den genre han normalt hopper på.
                 Jeg valgte så lave det her beat, som jeg så lavede en video af på instagram og fangede hans interrese, hvor han så delte den. Derfra skrev vi med hinanden og 
                 kom frem med to sange som jeg har været med til at medproducere, og begge sange ligger med over 1 million views på YouTube!
@@ -125,13 +129,16 @@
     <script>
 
     //Make an array of the song locations in javascript
-            Arr = ['song1.mp3', 'song2.mp3', 'song3.mp3']
+            Arr = ['sange/Demo/Drillos.mp3', 'sange/demo/g_young.mp3', 'sange/demo/karan_pt2.mp3', 'sange/demo/karan_yesla.mp3']
         
             //Make the function
             function func(x) {
             document.getElementById('musicPlayer').setAttribute('src', Arr[x])
             }
+    </script>
 
+    <!-- JS til navbar-->
+    <script>
         function myFunction() {
         var x = document.getElementById("myTopnav");
         //benyttelse af if statement
@@ -142,6 +149,7 @@
             }
         }
     </script>
+
 
     <!-- JS til footer knap-->
     <!--Jeg har valgt at bruge inspiration fra https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
