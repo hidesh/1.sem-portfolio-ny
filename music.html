@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <main>
         <!--Navigation bar, som jeg har fået inspiration fra W3School - "Responsive Top Navigation", og gjort det til mit eget -->
@@ -32,15 +33,68 @@
 
     <h6>Musik og Produktion</h6>
     <div class="center">
-        <h5> Jeg har altid været fascineret af musik. Hvordan oprindelsen og produktion fungere af forskellige genre, som virkelig fanger min øre.
+        <h5> Jeg har altid været fascineret af musik. Hvordan oprindelsen og produktion fungere i de forskellige genre.
              Selvom min baggrund ikke har været at mestrer et eller flere instrumenter, har jeg altid haft et godt ørefang, og det har givet mig muligheden
              i at nemt at kunne forstå hvordan en sang er produceret. Selve interresen for produktion kom frem i 2016, hvor jeg startet i mit år i 10.klasse,
-             her fik jeg nogle nye venner som virkelig gav mig et kendskab i forskellige genre musik. Det var nemlig her hvor jeg lærte at remixe sange som det første.
+             her fik jeg nogle nye venner som virkelig gav mig et kendskab i forskellige musikgenre. Det var nemlig her hvor jeg lærte at remixe sange som det første og herefter producere.
         </h5>
     </div>    
 
-    <h6>Collabs med Artister</h6>
-    
+
+    <section>
+        
+        <h6>Beats</h6>
+        <h5>Her er der små demoer af mine beats, dog vil der fremadrettet komme mange flere med en bedre medieplayer. De her beats er dog kun produceret i mit hjemmestudie og ikke i mit studie med bedre udstyr. Så det kan være at kvaliteten ikke er super.</h5>
+
+        <!-- Create a music element -->
+        <audio controls class="audio-container">
+        <source src="" type="audio/mp3"> <!--Make sure not to put anything in the scr-->
+        </audio>
+        
+        <!-- Create a few buttons -->
+        <div class="cardsproject">
+        <button class="buttonOne" onclick="func(0)">Song 1</button>
+        <button class="buttonOne" onclick="func(1)">Song 2</button>
+        <button class="buttonOne" onclick="func(2)">Song 3</button>
+        <button class="buttonOne" onclick="func(3)">Song 4</button>
+        </div>
+        <!-- I hope this was helpful! -->
+    </section>
+
+
+    <div class="cardproject">
+        <div class="container"> 
+            <h6>Collabs med Artister</h6>       
+            <div class="textbox">    
+                <h2>Ezu</h2>
+                <div class="cardsproject">
+                <img src="Billeder_og_logo/Ezu_2.png" alt="Hobbihub" class="imageBox">
+                <img src="Billeder_og_logo/Ezu_4.png" alt="Hobbihub" class="imageBox" style="height: 23em;">
+                </div>
+                <h5>Hvordan det hele startede?</h5>
+                <p class="h7">En dag i 2019, sad jeg og lyttede til musik med shuffle. Jeg var ret inspiret den dag og tænkte at det var på tide at lærer noget nyt. 
+                Jeg valgte derfor at finde en genre, som jeg synes var spændenede men mere relaterebar. Jeg fandt så genren Punjabi/Hip Hop, og dykket mig dybere ned i den.
+                Her fandt jeg mange forskellige artister jeg kunne lide, men blev helt interreseret i artisten Ezu, med hans sang "hor labna" - Dansk oversat "find en anden".
+                Jeg følte at genren passede perfekt med de nuværende kompentencer jeg havde og derfor valgte arbejde på et beat der mindede om den genre han normalt hopper på.
+                Jeg valgte så lave det her beat, som jeg så lavede en video af på instagram og fangede hans interrese, hvor han så delte den. Derfra skrev vi med hinanden og 
+                kom frem med to sange som jeg har været med til at medproducere, og begge sange ligger med over 1 million views på YouTube!
+                </p>
+                    <h6>"Curious"</h6>
+                    <div class="musictext">Prod. Hidesh & Jakub</div>
+                        <br>
+                    <audio controls class="audio-container">
+                        <source src="sange/jahita_2.mp3" type="audio/mpeg">
+                    </audio>
+                    <h5 style="padding-bottom: 2%;">Instagram storien der gjorde at vi kom i kontakt!</h5>
+                <video class="videosize; center" style="max-width: 300px; max-height: fit-content; padding-bottom: 20px;" controls><source src="Billeder_og_logo\Video_ezu.mp4" type="video/mp4"></video> 
+                <h5>Sange jeg har været med til at co-producere!</h5>
+                    <div class="cardsproject" >
+                        <iframe class="videosizeYT" src="https://www.youtube.com/embed/rtE1jw0Pe4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="videosizeYT" src="https://www.youtube.com/embed/KalOQSxcVRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>    
+                </div>
+        </div>
+    </div>
 
     <!--Footer med href links til forskellige sociale medier-->   
     <footer class="footer">
@@ -62,15 +116,22 @@
      
     </footer>
         
-
-    
-
-    
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+    </div>
     
 <!--Scripts-->  
 
     <!-- JS til navbar-->
     <script>
+
+    //Make an array of the song locations in javascript
+            Arr = ['song1.mp3', 'song2.mp3', 'song3.mp3']
+        
+            //Make the function
+            function func(x) {
+            document.getElementById('musicPlayer').setAttribute('src', Arr[x])
+            }
+
         function myFunction() {
         var x = document.getElementById("myTopnav");
         //benyttelse af if statement

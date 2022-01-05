@@ -1,7 +1,26 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-45deg, #000000, #2d7dff, #e7c81b, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100%;
   }
+
+/*Baggrunds animation*/
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 /*Tekst classes*/  
   h1 {
@@ -79,7 +98,7 @@ body {
 
 /*Container*/
   .textbox{
-    border: 3px solid white;
+    border: 3px rgba(red, green, blue, 1);
   }
 
   .grid-containerbox {
@@ -121,6 +140,21 @@ body {
   }
 
 /*Knapper*/
+
+  .buttonOne{
+    background-color: #000000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  .buttonOne:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
   a.button1{
     background-color:#faca23 ;
     color: black;
@@ -330,6 +364,11 @@ input[type=submit] {
       border-width: 0px;
   }
 
+  .videosizeYT{
+    width: 100%;
+    height: 600px;
+}
+
   /*Forskellige fonte jeg blev nød til at fremkalde lokalt*/
   @font-face {
       font-family: nexaboldX;
@@ -398,6 +437,11 @@ input[type=submit] {
         width: 100%;
         height: 20em;
     }
+
+    .videosizeYT{
+      width: 100%;
+      height: 20em;
+  }
 
   }
 
