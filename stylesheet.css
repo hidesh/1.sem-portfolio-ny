@@ -428,7 +428,7 @@ input[type=submit] {
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 630px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon{
       position: absolute;
